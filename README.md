@@ -36,9 +36,11 @@
 - 気象庁 XML フィード
 - LINE Messaging API
 
-## 環境変数
+API キーやトークンはコードに直書きせず、`.env` にまとめて設定します。
 
-実装時は、以下のような環境変数を利用する想定です。
+## 環境変数（.env）
+
+実装時は、以下のような環境変数を `.env` に設定する想定です。
 
 ```env
 LINE_CHANNEL_ACCESS_TOKEN=xxxxxxxx
@@ -46,6 +48,8 @@ LINE_CHANNEL_SECRET=xxxxxxxx
 LINE_USER_ID=xxxxxxxx
 OPENWEATHER_API_KEY=xxxxxxxx
 ```
+
+必要に応じて、将来的に地域設定や通知先を追加できるように拡張します。
 
 ## 実装方針
 
